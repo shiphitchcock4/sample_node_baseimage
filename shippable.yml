@@ -14,7 +14,7 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14nod
+    image_name: drydock/u12nod
     image_tag: tip
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
