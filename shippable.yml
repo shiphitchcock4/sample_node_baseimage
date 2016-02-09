@@ -11,11 +11,14 @@ env:
 
   matrix:
     - M1=ONE
+    
+services:
+  - mysql
 
 build:
   pre_ci_boot:
-    image_name: drydock/u12nod
-    image_tag: tip
+    image_name: drydock/u14nodpls
+    image_tag: prod
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
